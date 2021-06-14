@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<style>
+    td{
+        border: none;
+    }
+</style>
+<body>
+    <br><br>
+        <div class="container">
+            <div class="heading">
+             <h1>APPLICATION FORM</h1>
+            </div>
+            <hr>
+         </div>
+    
+    <div class="container">
+        
+        <table>
+            <tr>
+               <td><strong>GUIDELINES FOR FILLING FORM!</strong></ul></td>
+            </tr>
+            <tr>
+                <td>1.Once submitted you can't edit the application</td>
+            </tr>
+            <tr>
+                <td>2.Students have to submit their school id card and school approved letter as a pdf</td>
+            </tr>
+            <tr>
+                <td>3.Disabled applicants have to upload medical certifcate from an authorised doctor</td>
+            </tr>
+            <tr>
+                <td>4.Upload a passport size photo</td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    
+    <br><br>
+    <form id="form1" method="post" action>
+        <div class="container">
+            <p class="red">Applicant Details</p>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" autocomplete="false" id="fname" required>
+                </div>   
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" autocomplete="false" id="lname" required>
+                </div>                     
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-5 col-sm-4">
+                    <label for="dob">DOB (DD/MM/YYYY)</label>
+                    <input type="text" class="form-control" autocomplete="false" id="dob" required>
+                </div>   
+                <div class="form-group col-md-5 col-sm-4">
+                    <label for="age">AGE</label>
+                    <input type="number" class="form-control" autocomplete="false" id="age" required>
+                </div> 
+                <div class="form-group col-md-2 col-sm-2">
+                    <label for="gen">Gender</label>
+                    <p>
+                    <select class="box" class="btn btn-secondary" id="choose" required>
+                        <option selected>--</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    </p>
+                </div>                     
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="adr">Aadhar Number</label>
+                    <input type="number" class="form-control" autocomplete="false" id="adr" required>
+                </div>   
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="num">Mobile Number</label>
+                    <input type="number" class="form-control" autocomplete="false" id="num" required>
+                </div>                     
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="adr">School Name</label>
+                    <input type="text" class="form-control" autocomplete="false" id="adr" required>
+                </div>   
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="num">District</label>
+                    <input type="text" class="form-control" autocomplete="false" id="num" required>
+                </div>                     
+            </div>
+            <hr>
+            <p class="red">Concession & Travel Details</p>
+            <div class="form-row">  
+                <div class="form-group col-md-2 col-sm-3">
+                    <label for="num">Duration</label>
+                    <p>
+                    <select class="box" class="btn btn-secondary" id="choose" required>
+                        <option selected>--</option>
+                        <option>1 Month</option>
+                        <option>2 Months</option>
+                        <option>3 Months</option>
+                    </select>
+                    </p>
+                </div>                     
+                <div class="form-group col-md-5 col-sm-3">
+                    <label for="board">Boarding</label>
+                    <input type="text" class="form-control" autocomplete="false" id="board" required>
+                </div>   
+                <div class="form-group col-md-5 col-sm-3">
+                    <label for="dest">Destination</label>
+                    <input type="text" class="form-control" autocomplete="false" id="dest"required >
+                </div>                     
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-5">
+                        <label for="proof">Student ID/Medical Certificate</label>
+                        <input type="file" class="box" class="btn btn-secondary" id="proof" value="Upload Proof" name="submit" required>
+                </div>  
+                <div class="form-group col-md-6 col-sm-5">
+                    <label for="photo">Passport Size Photo</label>
+                    <input type="file" class="box" class="btn btn-secondary" id="photo" value="Upload Photo" name="submit" required>
+            </div>                   
+            </div>
+            
+            <div class="form-row">
+                <button type="submit" name="sub">SUBMIT</button>         
+            </div>
+
+        </div>
+        
+    </form>
+    
+
+</body>
+</html>
